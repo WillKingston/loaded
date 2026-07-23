@@ -38,53 +38,29 @@ export default function Home() {
               width={500}
               height={500}
               priority
+              unoptimized
             />
           </a>
-          <nav aria-label="Landing page">
-            <a href="#learn">What you will learn</a>
-            <a href="#reserve">Reserve</a>
-          </nav>
         </header>
 
         <section className="hero" id="top">
-          <div className="hero-content">
-            <p className="eyebrow">Free Saturday seminar for future Texas homebuyers</p>
-            <h1>Free Homebuyer Credit Readiness Seminar</h1>
+          <div className="funnel-shell">
+            <p className="eyebrow">Free Saturday seminar for Texas homebuyers</p>
+            <h1>Fix the credit questions before you start house hunting.</h1>
             <p className="hero-lede">
-              Ready to buy your first home, but credit, financing, or pre-approval
-              still feels unclear? Loaded Realty Group breaks the process down in
-              plain language so you can move from questions to a real path forward.
+              Loaded Realty Group walks you through credit repair, financing,
+              pre-approval, and the first steps to becoming a confident
+              homebuyer.
             </p>
-            <div className="hero-actions">
-              <a className="button-primary" href="#reserve">
-                Reserve your seat
-              </a>
-              <a className="button-secondary" href="#learn">
-                See what is covered
-              </a>
-            </div>
+            <a className="button-primary" href="#reserve">
+              Reserve your seat
+            </a>
             <div className="event-strip" aria-label="Event details">
               <span>Every Saturday</span>
               <span>9:00 AM CT</span>
-              <span>In person or virtual</span>
+              <span>Free seminar</span>
             </div>
           </div>
-
-          <aside className="hero-panel" aria-label="Seminar focus areas">
-            <div className="panel-logo-mark">LRG</div>
-            <h2>The Home Stretch: Your Path to Ownership</h2>
-            <p>
-              From credit repair to your first walkthrough, this session is
-              built to remove confusion and give you confidence.
-            </p>
-            <div className="score-card" aria-label="Credit readiness example">
-              <span>Credit readiness</span>
-              <strong>Review. Repair. Prepare.</strong>
-              <div className="score-meter">
-                <span />
-              </div>
-            </div>
-          </aside>
         </section>
 
         <section className="section intro-section" id="learn">

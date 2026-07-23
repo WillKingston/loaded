@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
+import { Manrope } from "next/font/google";
 import { headers } from "next/headers";
 import "./globals.css";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-modern",
+  display: "swap",
+});
 
 const siteTitle = "Free Homebuyer Credit Readiness Seminar | Loaded Realty";
 const siteDescription =
@@ -63,7 +70,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={manrope.variable}>{children}</body>
     </html>
   );
 }
