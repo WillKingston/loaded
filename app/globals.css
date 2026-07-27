@@ -137,7 +137,7 @@ p {
 
 .hero {
   margin: 0 auto;
-  max-width: 680px;
+  max-width: 760px;
   padding: 0.55rem 1rem 0;
 }
 
@@ -147,7 +147,7 @@ p {
   border-radius: 0;
   display: block;
   margin: 0 auto;
-  max-width: 560px;
+  max-width: 620px;
   padding: 1.1rem 0 0.75rem;
   text-align: center;
 }
@@ -176,17 +176,18 @@ h1 {
 }
 
 .hero-image-frame {
-  aspect-ratio: 1;
+  aspect-ratio: 16 / 9;
   border-radius: 0.45rem;
   margin-top: 1rem;
-  max-width: 360px;
+  max-width: 540px;
   overflow: hidden;
-  width: min(100%, 360px);
+  width: min(100%, 540px);
 }
 
 .hero-image {
   height: 100%;
   object-fit: cover;
+  object-position: center 42%;
   width: 100%;
 }
 
@@ -307,8 +308,8 @@ h1 {
   }
 
   .hero-image-frame {
-    max-width: 320px;
-    width: min(100%, 320px);
+    max-width: 360px;
+    width: min(100%, 360px);
   }
 
   .button-primary {
