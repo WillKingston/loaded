@@ -72,17 +72,6 @@ export default function Home() {
               title="The Home Stretch Form"
             />
           </div>
-          <p className="form-fallback">
-            Form not appearing?{" "}
-            <a
-              href="https://api.leadconnectorhq.com/widget/form/PtCfZsLXw8OTs4eKd7TN"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open the secure form
-            </a>
-            .
-          </p>
         </section>
       </main>
       <Script src="https://link.msgsndr.com/js/form_embed.js" strategy="afterInteractive" />
