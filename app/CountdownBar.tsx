@@ -7,7 +7,6 @@ const SATURDAY_INDEX = 6;
 const EVENT_HOUR = 9;
 const RESET_HOUR = 10;
 const EVENT_WINDOW_MS = 60 * 60 * 1000;
-const UNIT_LABELS = ["Days", "Hours", "Minutes", "Seconds"] as const;
 
 type ZonedParts = {
   year: number;
@@ -223,9 +222,10 @@ export function CountdownBar() {
   }, []);
 
   const values = snapshot?.values ?? ["-", "--", "--", "--"];
+  const countdownText = `${values[0]}d ${values[1]}h ${values[2]}m ${values[3]}s`;
   const statusText = snapshot?.isLive
-    ? "Session is live. New countdown begins at 10:00 AM Texas time."
-    : `Next free seminar: ${snapshot?.nextEventLabel ?? "Saturday at 9:00 AM CT"}.`;
+    ? "Live now. Resets at 10:00 AM Texas time."
+    : `Next seminar: ${snapshot?.nextEventLabel ?? "Saturday at 9:00 AM CT"}`;
 
   return (
     <section className="countdown-shell" aria-label="Seminar countdown">
@@ -234,14 +234,7 @@ export function CountdownBar() {
           <span className="countdown-kicker">Every Saturday at 9:00 AM Texas time</span>
           <strong>{statusText}</strong>
         </div>
-        <div className="countdown-units" aria-live="polite">
-          {UNIT_LABELS.map((label, index) => (
-            <span className="countdown-unit" key={label}>
-              <span>{values[index]}</span>
-              <small>{label}</small>
-            </span>
-          ))}
-        </div>
+        <strong className="countdown-time" aria-live="polite">{countdownText}</strong>
       </div>
       <div className="countdown-track" aria-hidden="true">
         <span

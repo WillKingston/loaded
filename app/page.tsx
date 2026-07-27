@@ -23,31 +23,18 @@ export default function Home() {
         <section className="hero" id="top">
           <div className="funnel-shell">
             <div className="hero-primary">
-              <p className="eyebrow">Free Saturday seminar</p>
               <h1>If credit is holding you back, start here.</h1>
               <p className="hero-lede">
-                Reserve your seat for Loaded Realty Group&apos;s homebuyer seminar.
+                Free homebuyer seminar. Every Saturday at 9:00 AM Texas time.
               </p>
               <a className="button-primary hero-button" href="#reserve">
                 Reserve your seat
               </a>
-              <div className="event-strip" aria-label="Event details">
-                <span>Every Saturday at 9:00 AM Texas time</span>
-                <span>Free seminar</span>
-              </div>
             </div>
           </div>
         </section>
 
         <section className="form-section" id="reserve">
-          <div className="form-copy">
-            <p className="eyebrow">Seats are limited</p>
-            <h2>Reserve your spot.</h2>
-            <p>
-              Complete the form below and we will confirm the next available
-              Saturday session.
-            </p>
-          </div>
           <div className="form-frame">
             <iframe
               src="https://api.leadconnectorhq.com/widget/form/PtCfZsLXw8OTs4eKd7TN"
