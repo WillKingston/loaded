@@ -175,6 +175,21 @@ h1 {
   max-width: 26rem;
 }
 
+.hero-image-frame {
+  aspect-ratio: 1;
+  border-radius: 0.45rem;
+  margin-top: 1rem;
+  max-width: 360px;
+  overflow: hidden;
+  width: min(100%, 360px);
+}
+
+.hero-image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
 .button-primary {
   align-items: center;
   background: var(--navy-deep);
@@ -195,7 +210,7 @@ h1 {
 }
 
 .hero-button {
-  margin-top: 0.9rem;
+  margin-top: 1rem;
   min-width: 11rem;
 }
 
@@ -289,6 +304,11 @@ h1 {
 
   .hero-lede {
     font-size: 1rem;
+  }
+
+  .hero-image-frame {
+    max-width: 320px;
+    width: min(100%, 320px);
   }
 
   .button-primary {

@@ -30,6 +30,7 @@ test("server-renders the Loaded Realty landing page", async () => {
   const html = await response.text();
   assert.match(html, /Free Homebuyer Credit Readiness Seminar/);
   assert.match(html, /Every Saturday at 9:00 AM Texas time/);
+  assert.match(html, /\/hero-family\.jpeg/);
   assert.match(html, /The Home Stretch Form/);
   assert.match(html, /https:\/\/api\.leadconnectorhq\.com\/widget\/form\/PtCfZsLXw8OTs4eKd7TN/);
   assert.match(html, /https:\/\/link\.msgsndr\.com\/js\/form_embed\.js/);

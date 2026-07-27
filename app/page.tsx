@@ -27,6 +27,17 @@ export default function Home() {
               <p className="hero-lede">
                 Free homebuyer seminar. Every Saturday at 9:00 AM Texas time.
               </p>
+              <div className="hero-image-frame">
+                <Image
+                  className="hero-image"
+                  src="/hero-family.jpeg"
+                  alt="Smiling family with two children"
+                  width={1200}
+                  height={1200}
+                  priority
+                  unoptimized
+                />
+              </div>
               <a className="button-primary hero-button" href="#reserve">
                 Reserve your seat
               </a>
