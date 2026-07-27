@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5f7fb;
+  --background: #ffffff;
   --foreground: #0f1f36;
   --navy: #162b49;
   --navy-deep: #0b1a2f;
@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  background: var(--background);
+  background: var(--white);
   color: var(--foreground);
   font-family:
     var(--font-modern),
@@ -195,7 +195,7 @@ p {
 }
 
 .hero-support {
-  background: #f8fafc;
+  background: var(--white);
   border: 1px solid var(--line);
   border-radius: 0.4rem;
   display: grid;
@@ -279,7 +279,7 @@ h1 {
 }
 
 .event-strip span {
-  background: #f8fafc;
+  background: var(--white);
   border: 1px solid var(--line);
   border-radius: 0.35rem;
   color: var(--navy);
@@ -292,6 +292,26 @@ h1 {
   margin: 0 auto;
   max-width: 980px;
   padding: 2.2rem 1rem;
+}
+
+.section-break {
+  color: var(--white);
+  height: clamp(2.5rem, 6vw, 4.8rem);
+  line-height: 0;
+  margin: -1.1rem 0 -0.6rem;
+  overflow: hidden;
+  pointer-events: none;
+  width: 100%;
+}
+
+.section-break svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.section-break path {
+  fill: currentColor;
 }
 
 .intro-section {
@@ -418,18 +438,18 @@ h1 {
 .form-section {
   margin: 0 auto;
   max-width: 1120px;
-  padding: 1.3rem 1rem 4rem;
+  padding: 0.6rem 1rem 4rem;
 }
 
 .form-frame {
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 0.5rem;
-  box-shadow: var(--shadow);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
   height: 1420px;
   margin: 1.5rem auto 0;
   max-width: 820px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .form-frame iframe {

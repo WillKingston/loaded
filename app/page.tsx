@@ -83,6 +83,12 @@ export default function Home() {
           </div>
         </section>
 
+        <div className="section-break" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path d="M0 0v100S0 4 500 4s500 96 500 96V0H0Z" />
+          </svg>
+        </div>
+
         <section className="form-section" id="reserve">
           <div className="form-copy">
             <p className="eyebrow">Seats are limited</p>
